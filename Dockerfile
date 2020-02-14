@@ -1,10 +1,10 @@
-FROM python:3.8
+FROM python:3.8.1
 
 USER root
 
+RUN pip install   docutils < 0.16
+
 RUN pip install \
-  flake8==3.7.9 \
-  black==19.10b0 \
   sqlparse==0.3.0 \
   git+https://github.com/bitprophet/releases/#egg=releases \
   boto3==1.11.13 \
