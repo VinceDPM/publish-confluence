@@ -3,6 +3,7 @@ FROM python:3.8
 USER root
 
 RUN pip install \
+  Sphinx \
   sphinxcontrib-confluencebuilder \
   recommonmark \
   flake8==3.7.9 \
